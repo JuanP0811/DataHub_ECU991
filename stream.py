@@ -3,10 +3,30 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
+import os
 
 st.set_page_config(page_title="ECU 911 - Dashboard", layout="wide")
 
 st.title("📊 Proyecto ECU 911 de los años 2021-2025")
+
+# ==========================================
+# CONFIGURACIÓN DE DATOS
+# ==========================================
+ARCHIVO_CSV = "datos_limpios_2021_2025.csv"
+GOOGLE_DRIVE_FILE_ID = "1BV31271akn6eaJNbduYLYHLvjcreQx9S"
+
+@st.cache_data
+def descargar_datos_gdrive():
+    """Descarga el archivo CSV desde Google Drive si no existe localmente"""
+    if not os.path.exists(ARCHIVO_CSV):
+        with st.spinner("📥 Descargando datos desde Google Drive (esto puede tomar unos minutos)..."):
+            import gdown
+            url = f"https://drive.google.com/uc?id={GOOGLE_DRIVE_FILE_ID}"
+            gdown.download(url, ARCHIVO_CSV, quiet=False)
+    return ARCHIVO_CSV
+
+# Descargar datos si es necesario
+archivo = descargar_datos_gdrive()
 
 # ==========================================
 # CARGA DE DATOS
@@ -14,7 +34,7 @@ st.title("📊 Proyecto ECU 911 de los años 2021-2025")
 @st.cache_data
 def cargar_datos_completos():
     """Carga todos los datos para análisis"""
-    df = pd.read_csv("datos_limpios_2021_2025.csv", low_memory=False)
+    df = pd.read_csv(ARCHIVO_CSV, low_memory=False)
     df['Fecha'] = pd.to_datetime(df['Fecha'], errors='coerce')
     df['Año'] = df['Fecha'].dt.year
     df['Mes'] = df['Fecha'].dt.month
@@ -25,8 +45,8 @@ def cargar_datos_completos():
 @st.cache_data
 def obtener_info_basica():
     """Obtiene info básica sin cargar todo en memoria"""
-    total_filas = sum(1 for _ in open("datos_limpios_2021_2025.csv", encoding='utf-8')) - 1
-    columnas = pd.read_csv("datos_limpios_2021_2025.csv", nrows=0).columns.tolist()
+    total_filas = sum(1 for _ in open(ARCHIVO_CSV, encoding='utf-8')) - 1
+    columnas = pd.read_csv(ARCHIVO_CSV, nrows=0).columns.tolist()
     return total_filas, columnas
 
 # Cargar datos
