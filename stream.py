@@ -219,60 +219,58 @@ with tab2:
 with tab3:
     st.subheader("📊 Análisis Comparativo")
     
-    col1, col2 = st.columns(2)
-    
     # Año vs Año
-    with col1:
-        st.markdown("#### 📅 Comparación Año vs Año")
-        st.caption("¿2024 tuvo más incidentes que 2023?")
-        
-        datos_año_servicio = cargar_csv("conteos_ano_servicio.csv")
-        
-        fig_anio = px.bar(
-            datos_año_servicio,
-            x='Año',
-            y='Cantidad',
-            color='Servicio',
-            barmode='group',
-            text='Cantidad',
-            title="Incidentes por Año y Servicio"
-        )
-        fig_anio.update_traces(texttemplate='%{text:,.0f}', textposition='outside', textfont_size=9)
-        fig_anio.update_layout(
-            height=450, 
-            xaxis={'type': 'category', 'showgrid': False},
-            yaxis=dict(showgrid=False)
-        )
-        st.plotly_chart(fig_anio, use_container_width=True)
+    st.markdown("#### 📅 Comparación Año vs Año")
+    st.caption("¿2024 tuvo más incidentes que 2023?")
+    
+    datos_año_servicio = cargar_csv("conteos_ano_servicio.csv")
+    
+    fig_anio = px.bar(
+        datos_año_servicio,
+        x='Año',
+        y='Cantidad',
+        color='Servicio',
+        barmode='group',
+        text='Cantidad',
+        title="Incidentes por Año y Servicio"
+    )
+    fig_anio.update_traces(texttemplate='%{text:,.0f}', textposition='outside', textfont_size=9)
+    fig_anio.update_layout(
+        height=450, 
+        xaxis={'type': 'category', 'showgrid': False},
+        yaxis=dict(showgrid=False)
+    )
+    st.plotly_chart(fig_anio, use_container_width=True)
+    
+    st.markdown("---")
     
     # Ranking de parroquias
-    with col2:
-        st.markdown("#### 🎯 Ranking de Parroquias (Puntos Críticos)")
-        st.caption("¿Cuáles son los puntos críticos?")
-        
-        n_parroquias = st.slider("Número de parroquias a mostrar:", 10, 30, 15)
-        
-        ranking = cargar_csv("ranking_parroquias.csv")
-        datos_parroquia = ranking.head(n_parroquias).copy()
-        datos_parroquia['Etiqueta'] = datos_parroquia['Parroquia'] + ' (' + datos_parroquia['provincia'] + ')'
-        
-        fig_parroquias = px.bar(
-            datos_parroquia,
-            x='Cantidad',
-            y='Etiqueta',
-            orientation='h',
-            color='provincia',
-            title=f"Top {n_parroquias} Parroquias con más Incidentes",
-            text='Cantidad'
-        )
-        fig_parroquias.update_traces(texttemplate='%{text:,}', textposition='outside')
-        fig_parroquias.update_layout(
-            height=500,
-            yaxis={'categoryorder': 'total ascending'},
-            showlegend=True,
-            legend_title="Provincia"
-        )
-        st.plotly_chart(fig_parroquias, use_container_width=True)
+    st.markdown("#### 🎯 Ranking de Parroquias (Puntos Críticos)")
+    st.caption("¿Cuáles son los puntos críticos?")
+    
+    n_parroquias = st.slider("Número de parroquias a mostrar:", 10, 30, 15)
+    
+    ranking = cargar_csv("ranking_parroquias.csv")
+    datos_parroquia = ranking.head(n_parroquias).copy()
+    datos_parroquia['Etiqueta'] = datos_parroquia['Parroquia'] + ' (' + datos_parroquia['provincia'] + ')'
+    
+    fig_parroquias = px.bar(
+        datos_parroquia,
+        x='Cantidad',
+        y='Etiqueta',
+        orientation='h',
+        color='provincia',
+        title=f"Top {n_parroquias} Parroquias con más Incidentes",
+        text='Cantidad'
+    )
+    fig_parroquias.update_traces(texttemplate='%{text:,}', textposition='outside')
+    fig_parroquias.update_layout(
+        height=500,
+        yaxis={'categoryorder': 'total ascending'},
+        showlegend=True,
+        legend_title="Provincia"
+    )
+    st.plotly_chart(fig_parroquias, use_container_width=True)
 
 # ==========================================
 # TAB 4: INFORMACIÓN
