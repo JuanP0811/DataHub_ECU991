@@ -4,76 +4,55 @@ import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
 import os
+import json
 
 st.set_page_config(page_title="ECU 911 - Dashboard", layout="wide")
 
 st.title("📊 Proyecto ECU 911 de los años 2021-2025")
 
 # ==========================================
-# CONFIGURACIÓN DE DATOS
+# CONFIGURACIÓN DE DATOS AGREGADOS
 # ==========================================
-ARCHIVO_CSV = "datos_limpios_2021_2025.csv"
-GOOGLE_DRIVE_FILE_ID = "1BV31271akn6eaJNbduYLYHLvjcreQx9S"
-
-@st.cache_data
-def descargar_datos_gdrive():
-    """Descarga el archivo CSV desde Google Drive si no existe localmente"""
-    if not os.path.exists(ARCHIVO_CSV):
-        with st.spinner("📥 Descargando datos desde Google Drive (esto puede tomar unos minutos)..."):
-            import gdown
-            url = f"https://drive.google.com/uc?id={GOOGLE_DRIVE_FILE_ID}"
-            gdown.download(url, ARCHIVO_CSV, quiet=False)
-    return ARCHIVO_CSV
-
-# Descargar datos si es necesario
-archivo = descargar_datos_gdrive()
+CARPETA_DATOS = "datos_agregados"
+GOOGLE_DRIVE_IDS = {
+    "conteos_ano_mes.csv": None,  # Se actualizará después de subir a Drive
+    "conteos_dia_semana.csv": None,
+    "conteos_provincia.csv": None,
+    "evolucion_provincia.csv": None,
+    "conteos_canton.csv": None,
+    "conteos_ano_servicio.csv": None,
+    "ranking_parroquias.csv": None,
+    "metadatos.json": None
+}
 
 # ==========================================
-# CARGA DE DATOS
+# CARGA DE DATOS AGREGADOS
 # ==========================================
-# Límite de filas para Streamlit Cloud (memoria limitada)
-MAX_FILAS = 500000
+@st.cache_data
+def cargar_metadatos():
+    with open(f"{CARPETA_DATOS}/metadatos.json", "r", encoding="utf-8") as f:
+        return json.load(f)
 
 @st.cache_data
-def cargar_datos_completos():
-    """Carga datos para análisis (limitado para funcionar en la nube)"""
-    df = pd.read_csv(ARCHIVO_CSV, nrows=MAX_FILAS, low_memory=False)
-    df['Fecha'] = pd.to_datetime(df['Fecha'], errors='coerce')
-    df['Año'] = df['Fecha'].dt.year
-    df['Mes'] = df['Fecha'].dt.month
-    df['Hora'] = df['Fecha'].dt.hour
-    df['Año_Mes'] = df['Fecha'].dt.to_period('M').astype(str)
-    return df
+def cargar_csv(nombre):
+    return pd.read_csv(f"{CARPETA_DATOS}/{nombre}")
 
-@st.cache_data
-def obtener_info_basica():
-    """Obtiene info básica"""
-    # Contar filas totales del archivo
-    total_filas_archivo = sum(1 for _ in open(ARCHIVO_CSV, encoding='utf-8')) - 1
-    columnas = pd.read_csv(ARCHIVO_CSV, nrows=0).columns.tolist()
-    return min(total_filas_archivo, MAX_FILAS), columnas, total_filas_archivo
-
-# Cargar datos
-total_filas, columnas, total_archivo = obtener_info_basica()
-
-with st.spinner("Cargando datos para visualización..."):
-    df = cargar_datos_completos()
-
-# Aviso de muestra
-if total_archivo > MAX_FILAS:
-    st.info(f"📊 Mostrando muestra de **{MAX_FILAS:,}** registros de **{total_archivo:,}** totales (para optimizar rendimiento en la nube)")
+# Cargar metadatos
+metadatos = cargar_metadatos()
+total_registros = metadatos["total_registros"]
 
 # Métricas principales
 st.markdown("### 📈 Resumen General")
 col_m1, col_m2, col_m3, col_m4 = st.columns(4)
 with col_m1:
-    st.metric("Total de Registros", f"{total_filas:,}")
+    st.metric("Total de Registros", f"{total_registros:,}")
 with col_m2:
-    st.metric("Período", "2021 - 2025")
+    años = metadatos["anos"]
+    st.metric("Período", f"{min(años)} - {max(años)}")
 with col_m3:
-    st.metric("Provincias", df['provincia'].nunique())
+    st.metric("Provincias", metadatos["provincias"])
 with col_m4:
-    st.metric("Servicios", df['Servicio'].nunique())
+    st.metric("Servicios", metadatos["servicios"])
 
 st.divider()
 
@@ -83,8 +62,8 @@ st.divider()
 tab1, tab2, tab3, tab4 = st.tabs([
     "📅 Análisis Temporal",
     "🗺️ Análisis Geográfico", 
-    "� Análisis Comparativo",
-    "📋 Datos"
+    "📊 Análisis Comparativo",
+    "📋 Información"
 ])
 
 # ==========================================
@@ -100,11 +79,9 @@ with tab1:
         st.markdown("#### 🔥 Heatmap: Incidentes por Año y Mes")
         st.caption("¿Hay meses con más incidentes?")
         
-        # Crear tabla pivote para heatmap
-        heatmap_data = df.groupby(['Año', 'Mes']).size().reset_index(name='Cantidad')
+        heatmap_data = cargar_csv("conteos_ano_mes.csv")
         heatmap_pivot = heatmap_data.pivot(index='Año', columns='Mes', values='Cantidad').fillna(0)
         
-        # Nombres de los meses
         meses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 
                  'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
         
@@ -134,20 +111,11 @@ with tab1:
         st.markdown("#### 📊 Incidentes por Día de la Semana")
         st.caption("¿Qué día tiene más emergencias?")
         
-        # Agregar día de la semana
-        df['DiaSemana'] = df['Fecha'].dt.dayofweek
-        
-        # Nombres de días
+        datos_dia = cargar_csv("conteos_dia_semana.csv")
         dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']
-        
-        # Agrupar por día de semana
-        datos_dia = df.groupby('DiaSemana').size().reset_index(name='Cantidad')
-        datos_dia['Dia'] = datos_dia['DiaSemana'].apply(lambda x: dias[x])
-        
-        # Ordenar por día de semana
+        datos_dia['Dia'] = datos_dia['DiaSemana'].apply(lambda x: dias[int(x)])
         datos_dia = datos_dia.sort_values('DiaSemana')
         
-        # Crear gráfico de barras
         fig_dias = px.bar(
             datos_dia,
             x='Dia',
@@ -157,11 +125,7 @@ with tab1:
             text='Cantidad'
         )
         
-        fig_dias.update_traces(
-            texttemplate='%{text:,}',
-            textposition='outside'
-        )
-        
+        fig_dias.update_traces(texttemplate='%{text:,}', textposition='outside')
         fig_dias.update_layout(
             height=400,
             xaxis_title="Día de la semana",
@@ -172,11 +136,10 @@ with tab1:
         )
         st.plotly_chart(fig_dias, use_container_width=True)
         
-        # Mostrar día con más incidentes
         dia_pico = datos_dia.loc[datos_dia['Cantidad'].idxmax()]
         st.info(f"📌 **Día con más emergencias:** {dia_pico['Dia']} con {dia_pico['Cantidad']:,} incidentes")
     
-    # Insights adicionales
+    # Insights
     st.markdown("---")
     col_i1, col_i2, col_i3 = st.columns(3)
     
@@ -186,10 +149,10 @@ with tab1:
     with col_i1:
         st.info(f"📅 **Mes pico:** {meses[int(mes_pico['Mes'])-1]} {int(mes_pico['Año'])} con {mes_pico['Cantidad']:,} incidentes")
     with col_i2:
-        st.info(f"� **Mes más bajo:** {meses[int(mes_min['Mes'])-1]} {int(mes_min['Año'])} con {mes_min['Cantidad']:,} incidentes")
+        st.info(f"📉 **Mes más bajo:** {meses[int(mes_min['Mes'])-1]} {int(mes_min['Año'])} con {mes_min['Cantidad']:,} incidentes")
     with col_i3:
-        promedio_diario = total_filas / ((df['Fecha'].max() - df['Fecha'].min()).days or 1)
-        st.info(f"📊 **Promedio diario:** {promedio_diario:,.0f} incidentes")
+        promedio_mensual = heatmap_data['Cantidad'].mean()
+        st.info(f"📊 **Promedio mensual:** {promedio_mensual:,.0f} incidentes")
 
 # ==========================================
 # TAB 2: ANÁLISIS GEOGRÁFICO
@@ -197,11 +160,10 @@ with tab1:
 with tab2:
     st.subheader("🗺️ Análisis Geográfico de Incidentes")
     
-    # --- BARRAS HORIZONTALES: Provincias más afectadas ---
+    # Provincias más afectadas
     st.markdown("#### 📍 Provincias más Afectadas")
     
-    datos_provincia = df['provincia'].value_counts().reset_index()
-    datos_provincia.columns = ['Provincia', 'Cantidad']
+    datos_provincia = cargar_csv("conteos_provincia.csv")
     
     fig_provincias = px.bar(
         datos_provincia,
@@ -222,12 +184,13 @@ with tab2:
     
     st.markdown("---")
     
-    # --- LÍNEAS MÚLTIPLES: Evolución por provincia ---
+    # Evolución por provincia
     st.markdown("#### 📈 Evolución de Provincias en el Tiempo")
     st.caption("¿Cómo cambia cada provincia en el tiempo?")
     
-    # Selector de provincias (top 10 por defecto)
+    evolucion = cargar_csv("evolucion_provincia.csv")
     top_provincias = datos_provincia.head(10)['Provincia'].tolist()
+    
     provincias_seleccionadas = st.multiselect(
         "Selecciona provincias a comparar:",
         options=datos_provincia['Provincia'].tolist(),
@@ -235,23 +198,17 @@ with tab2:
     )
     
     if provincias_seleccionadas:
-        # Filtrar y agrupar datos
-        df_filtrado = df[df['provincia'].isin(provincias_seleccionadas)]
-        evolucion = df_filtrado.groupby(['Año_Mes', 'provincia']).size().reset_index(name='Cantidad')
+        evolucion_filtrada = evolucion[evolucion['provincia'].isin(provincias_seleccionadas)]
         
         fig_evolucion = px.line(
-            evolucion,
+            evolucion_filtrada,
             x='Año_Mes',
             y='Cantidad',
             color='provincia',
             markers=True,
             title="Evolución mensual de incidentes por provincia"
         )
-        fig_evolucion.update_layout(
-            height=450,
-            xaxis_tickangle=45,
-            legend_title="Provincia"
-        )
+        fig_evolucion.update_layout(height=450, xaxis_tickangle=45, legend_title="Provincia")
         st.plotly_chart(fig_evolucion, use_container_width=True)
     else:
         st.warning("Selecciona al menos una provincia para ver la evolución.")
@@ -260,20 +217,19 @@ with tab2:
 # TAB 3: ANÁLISIS COMPARATIVO
 # ==========================================
 with tab3:
-    st.subheader(" 📊 Análisis Comparativo")
+    st.subheader("📊 Análisis Comparativo")
     
     col1, col2 = st.columns(2)
     
-    # --- BARRAS AGRUPADAS: Año vs Año ---
+    # Año vs Año
     with col1:
         st.markdown("#### 📅 Comparación Año vs Año")
         st.caption("¿2024 tuvo más incidentes que 2023?")
         
-        # Agrupar por año y servicio
-        datos_anio_servicio = df.groupby(['Año', 'Servicio']).size().reset_index(name='Cantidad')
+        datos_año_servicio = cargar_csv("conteos_ano_servicio.csv")
         
         fig_anio = px.bar(
-            datos_anio_servicio,
+            datos_año_servicio,
             x='Año',
             y='Cantidad',
             color='Servicio',
@@ -288,18 +244,16 @@ with tab3:
             yaxis=dict(showgrid=False)
         )
         st.plotly_chart(fig_anio, use_container_width=True)
-        
-        
     
-    # --- TOP N PARROQUIAS: Puntos críticos ---
+    # Ranking de parroquias
     with col2:
         st.markdown("#### 🎯 Ranking de Parroquias (Puntos Críticos)")
         st.caption("¿Cuáles son los puntos críticos?")
         
         n_parroquias = st.slider("Número de parroquias a mostrar:", 10, 30, 15)
         
-        datos_parroquia = df.groupby(['Parroquia', 'provincia']).size().reset_index(name='Cantidad')
-        datos_parroquia = datos_parroquia.nlargest(n_parroquias, 'Cantidad')
+        ranking = cargar_csv("ranking_parroquias.csv")
+        datos_parroquia = ranking.head(n_parroquias).copy()
         datos_parroquia['Etiqueta'] = datos_parroquia['Parroquia'] + ' (' + datos_parroquia['provincia'] + ')'
         
         fig_parroquias = px.bar(
@@ -321,54 +275,29 @@ with tab3:
         st.plotly_chart(fig_parroquias, use_container_width=True)
 
 # ==========================================
-# TAB 4: DATOS
+# TAB 4: INFORMACIÓN
 # ==========================================
 with tab4:
-    st.subheader("📋 Explorador de Datos")
+    st.subheader("📋 Información del Dataset")
     
-    # Filtros
-    col_f1, col_f2, col_f3 = st.columns(3)
-    with col_f1:
-        año_filtro = st.multiselect("Filtrar por Año:", options=sorted(df['Año'].dropna().unique()))
-    with col_f2:
-        prov_filtro = st.multiselect("Filtrar por Provincia:", options=sorted(df['provincia'].dropna().unique()))
-    with col_f3:
-        serv_filtro = st.multiselect("Filtrar por Servicio:", options=sorted(df['Servicio'].dropna().unique()))
+    st.markdown(f"""
+    ### Datos ECU 911 (2021-2025)
     
-    # Aplicar filtros
-    df_mostrar = df.copy()
-    if año_filtro:
-        df_mostrar = df_mostrar[df_mostrar['Año'].isin(año_filtro)]
-    if prov_filtro:
-        df_mostrar = df_mostrar[df_mostrar['provincia'].isin(prov_filtro)]
-    if serv_filtro:
-        df_mostrar = df_mostrar[df_mostrar['Servicio'].isin(serv_filtro)]
+    - **Total de registros:** {total_registros:,}
+    - **Período:** {min(años)} - {max(años)}
+    - **Provincias:** {metadatos['provincias']}
+    - **Servicios:** {metadatos['servicios']}
     
-    # Paginación
-    col1, col2 = st.columns([1, 3])
-    with col1:
-        filas_por_pagina = st.selectbox(
-            "Filas por página:",
-            options=[100, 500, 1000, 5000],
-            index=1
-        )
-
-    total_filtrado = len(df_mostrar)
-    total_paginas = max(1, (total_filtrado + filas_por_pagina - 1) // filas_por_pagina)
-
-    with col2:
-        pagina = st.number_input(
-            f"Página (1 - {total_paginas:,}):",
-            min_value=1,
-            max_value=total_paginas,
-            value=1
-        )
-
-    inicio = (pagina - 1) * filas_por_pagina
-    fin = min(inicio + filas_por_pagina, total_filtrado)
+    ### Columnas originales del dataset:
+    """)
     
-    st.write(f"Mostrando filas **{inicio + 1:,}** a **{fin:,}** de **{total_filtrado:,}** (filtrado de {total_filas:,} total)")
+    for col in metadatos['columnas']:
+        st.markdown(f"- `{col}`")
     
-    # Mostrar columnas originales
-    columnas_mostrar = ['Fecha', 'provincia', 'Canton', 'Parroquia', 'Servicio', 'Subtipo']
-    st.dataframe(df_mostrar[columnas_mostrar].iloc[inicio:fin], use_container_width=True, height=500)
+    st.markdown("""
+    ---
+    ### Notas técnicas
+    
+    Este dashboard utiliza datos pre-agregados para optimizar el rendimiento en la nube.
+    Los gráficos muestran estadísticas calculadas sobre los **16.3 millones de registros** originales.
+    """)

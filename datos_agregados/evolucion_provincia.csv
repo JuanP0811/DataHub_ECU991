@@ -1,0 +1,1201 @@
+Año_Mes,provincia,Cantidad
+2021-07,azuay,32578
+2021-07,bolivar,7614
+2021-07,canar,6682
+2021-07,carchi,7288
+2021-07,chimborazo,17318
+2021-07,cotopaxi,12264
+2021-07,el oro,30458
+2021-07,esmeraldas,17346
+2021-07,galapagos,1796
+2021-07,guayas,157834
+2021-07,imbabura,22412
+2021-07,loja,16848
+2021-07,los rios,32480
+2021-07,manabi,31826
+2021-07,morona santiago,7054
+2021-07,napo,3108
+2021-07,orellana,6954
+2021-07,pastaza,4928
+2021-07,pichincha,144254
+2021-07,santa elena,9266
+2021-07,santo domingo de los tsachilas,21818
+2021-07,sucumbios,7912
+2021-07,tungurahua,26088
+2021-07,zamora chinchipe,2686
+2021-08,azuay,32504
+2021-08,bolivar,7686
+2021-08,canar,6496
+2021-08,carchi,6878
+2021-08,chimborazo,17144
+2021-08,cotopaxi,11602
+2021-08,el oro,32088
+2021-08,esmeraldas,18910
+2021-08,galapagos,1812
+2021-08,guayas,163510
+2021-08,imbabura,22722
+2021-08,loja,17578
+2021-08,los rios,33736
+2021-08,manabi,32946
+2021-08,morona santiago,6852
+2021-08,napo,3504
+2021-08,orellana,6398
+2021-08,pastaza,5346
+2021-08,pichincha,142688
+2021-08,santa elena,10196
+2021-08,santo domingo de los tsachilas,22114
+2021-08,sucumbios,7844
+2021-08,tungurahua,26600
+2021-08,zamora chinchipe,2612
+2021-09,azuay,31264
+2021-09,bolivar,7602
+2021-09,canar,5938
+2021-09,carchi,7098
+2021-09,chimborazo,17352
+2021-09,cotopaxi,11796
+2021-09,el oro,28946
+2021-09,esmeraldas,17784
+2021-09,galapagos,1706
+2021-09,guayas,155556
+2021-09,imbabura,21230
+2021-09,loja,16472
+2021-09,los rios,31656
+2021-09,manabi,31382
+2021-09,morona santiago,6800
+2021-09,napo,3240
+2021-09,orellana,6070
+2021-09,pastaza,4712
+2021-09,pichincha,142656
+2021-09,santa elena,8720
+2021-09,santo domingo de los tsachilas,20468
+2021-09,sucumbios,7974
+2021-09,tungurahua,25910
+2021-09,zamora chinchipe,2846
+2021-10,azuay,34922
+2021-10,bolivar,7370
+2021-10,canar,7188
+2021-10,carchi,7674
+2021-10,chimborazo,18820
+2021-10,cotopaxi,12526
+2021-10,el oro,29732
+2021-10,esmeraldas,19090
+2021-10,galapagos,1822
+2021-10,guayas,162080
+2021-10,imbabura,21542
+2021-10,loja,18352
+2021-10,los rios,33150
+2021-10,manabi,32568
+2021-10,morona santiago,7256
+2021-10,napo,3780
+2021-10,orellana,6534
+2021-10,pastaza,5062
+2021-10,pichincha,155294
+2021-10,santa elena,9644
+2021-10,santo domingo de los tsachilas,21610
+2021-10,sucumbios,8108
+2021-10,tungurahua,28238
+2021-10,zamora chinchipe,3082
+2021-11,azuay,32562
+2021-11,bolivar,7044
+2021-11,canar,6608
+2021-11,carchi,6838
+2021-11,chimborazo,17160
+2021-11,cotopaxi,11834
+2021-11,el oro,27848
+2021-11,esmeraldas,19226
+2021-11,galapagos,1822
+2021-11,guayas,144262
+2021-11,imbabura,19904
+2021-11,loja,17470
+2021-11,los rios,29904
+2021-11,manabi,30020
+2021-11,morona santiago,6896
+2021-11,napo,3290
+2021-11,orellana,5994
+2021-11,pastaza,4490
+2021-11,pichincha,140026
+2021-11,santa elena,9022
+2021-11,santo domingo de los tsachilas,19416
+2021-11,sucumbios,7642
+2021-11,tungurahua,25702
+2021-11,zamora chinchipe,2870
+2021-12,azuay,37622
+2021-12,bolivar,6860
+2021-12,canar,7146
+2021-12,carchi,7280
+2021-12,chimborazo,19530
+2021-12,cotopaxi,13106
+2021-12,el oro,31928
+2021-12,esmeraldas,18766
+2021-12,galapagos,1974
+2021-12,guayas,164010
+2021-12,imbabura,21662
+2021-12,loja,18458
+2021-12,los rios,31920
+2021-12,manabi,32334
+2021-12,morona santiago,7748
+2021-12,napo,3680
+2021-12,orellana,6146
+2021-12,pastaza,5000
+2021-12,pichincha,163190
+2021-12,santa elena,9330
+2021-12,santo domingo de los tsachilas,21344
+2021-12,sucumbios,8122
+2021-12,tungurahua,27534
+2021-12,zamora chinchipe,3244
+2022-01,azuay,16511
+2022-01,bolivar,3365
+2022-01,canar,3392
+2022-01,carchi,3443
+2022-01,chimborazo,8961
+2022-01,cotopaxi,5752
+2022-01,el oro,14897
+2022-01,esmeraldas,8809
+2022-01,galapagos,974
+2022-01,guayas,75084
+2022-01,imbabura,10056
+2022-01,loja,8392
+2022-01,los rios,14525
+2022-01,manabi,15764
+2022-01,morona santiago,3562
+2022-01,napo,1733
+2022-01,orellana,2881
+2022-01,pastaza,2396
+2022-01,pichincha,70704
+2022-01,santa elena,5162
+2022-01,santo domingo de los tsachilas,9805
+2022-01,sucumbios,4001
+2022-01,tungurahua,12890
+2022-01,zamora chinchipe,1425
+2022-02,azuay,16238
+2022-02,bolivar,3173
+2022-02,canar,3431
+2022-02,carchi,3228
+2022-02,chimborazo,8702
+2022-02,cotopaxi,5882
+2022-02,el oro,14004
+2022-02,esmeraldas,8288
+2022-02,galapagos,914
+2022-02,guayas,74290
+2022-02,imbabura,9867
+2022-02,loja,7864
+2022-02,los rios,13142
+2022-02,manabi,15171
+2022-02,morona santiago,3505
+2022-02,napo,1716
+2022-02,orellana,2764
+2022-02,pastaza,2366
+2022-02,pichincha,67123
+2022-02,santa elena,5070
+2022-02,santo domingo de los tsachilas,9351
+2022-02,sucumbios,3468
+2022-02,tungurahua,13129
+2022-02,zamora chinchipe,1265
+2022-03,azuay,17101
+2022-03,bolivar,3452
+2022-03,canar,3390
+2022-03,carchi,3578
+2022-03,chimborazo,8777
+2022-03,cotopaxi,6273
+2022-03,el oro,14295
+2022-03,esmeraldas,9226
+2022-03,galapagos,949
+2022-03,guayas,77052
+2022-03,imbabura,10794
+2022-03,loja,9064
+2022-03,los rios,14279
+2022-03,manabi,16226
+2022-03,morona santiago,3743
+2022-03,napo,1712
+2022-03,orellana,3123
+2022-03,pastaza,2475
+2022-03,pichincha,72974
+2022-03,santa elena,5006
+2022-03,santo domingo de los tsachilas,10574
+2022-03,sucumbios,3808
+2022-03,tungurahua,13408
+2022-03,zamora chinchipe,1413
+2022-04,azuay,18093
+2022-04,bolivar,3712
+2022-04,canar,3425
+2022-04,carchi,3560
+2022-04,chimborazo,8447
+2022-04,cotopaxi,6105
+2022-04,el oro,13693
+2022-04,esmeraldas,8290
+2022-04,galapagos,851
+2022-04,guayas,76601
+2022-04,imbabura,11040
+2022-04,loja,8670
+2022-04,los rios,15855
+2022-04,manabi,15717
+2022-04,morona santiago,3518
+2022-04,napo,1642
+2022-04,orellana,2899
+2022-04,pastaza,2574
+2022-04,pichincha,73858
+2022-04,santa elena,4474
+2022-04,santo domingo de los tsachilas,9593
+2022-04,sucumbios,4047
+2022-04,tungurahua,13579
+2022-04,zamora chinchipe,1390
+2022-05,azuay,15788
+2022-05,bolivar,3485
+2022-05,canar,2990
+2022-05,carchi,3392
+2022-05,chimborazo,8419
+2022-05,cotopaxi,5883
+2022-05,el oro,14143
+2022-05,esmeraldas,8800
+2022-05,galapagos,962
+2022-05,guayas,82463
+2022-05,imbabura,11809
+2022-05,loja,8711
+2022-05,los rios,14702
+2022-05,manabi,16119
+2022-05,morona santiago,3630
+2022-05,napo,1711
+2022-05,orellana,2983
+2022-05,pastaza,2468
+2022-05,pichincha,76216
+2022-05,santa elena,4471
+2022-05,santo domingo de los tsachilas,10862
+2022-05,sucumbios,3977
+2022-05,tungurahua,13280
+2022-05,zamora chinchipe,1422
+2022-06,azuay,17154
+2022-06,bolivar,2851
+2022-06,canar,3112
+2022-06,carchi,3268
+2022-06,chimborazo,7090
+2022-06,cotopaxi,5038
+2022-06,el oro,13299
+2022-06,esmeraldas,7828
+2022-06,galapagos,881
+2022-06,guayas,78938
+2022-06,imbabura,9868
+2022-06,loja,7618
+2022-06,los rios,13494
+2022-06,manabi,15203
+2022-06,morona santiago,2594
+2022-06,napo,1443
+2022-06,orellana,2654
+2022-06,pastaza,2173
+2022-06,pichincha,66651
+2022-06,santa elena,4283
+2022-06,santo domingo de los tsachilas,9949
+2022-06,sucumbios,3648
+2022-06,tungurahua,11424
+2022-06,zamora chinchipe,1231
+2022-07,azuay,17466
+2022-07,bolivar,3582
+2022-07,canar,3488
+2022-07,carchi,3621
+2022-07,chimborazo,8735
+2022-07,cotopaxi,6138
+2022-07,el oro,14237
+2022-07,esmeraldas,8338
+2022-07,galapagos,1014
+2022-07,guayas,75151
+2022-07,imbabura,10985
+2022-07,loja,8554
+2022-07,los rios,13889
+2022-07,manabi,16268
+2022-07,morona santiago,3419
+2022-07,napo,1709
+2022-07,orellana,2784
+2022-07,pastaza,2437
+2022-07,pichincha,74341
+2022-07,santa elena,4403
+2022-07,santo domingo de los tsachilas,10506
+2022-07,sucumbios,3846
+2022-07,tungurahua,12981
+2022-07,zamora chinchipe,1330
+2022-08,azuay,16495
+2022-08,bolivar,3318
+2022-08,canar,3449
+2022-08,carchi,3409
+2022-08,chimborazo,8223
+2022-08,cotopaxi,5612
+2022-08,el oro,14399
+2022-08,esmeraldas,8570
+2022-08,galapagos,995
+2022-08,guayas,70918
+2022-08,imbabura,10252
+2022-08,loja,7825
+2022-08,los rios,13648
+2022-08,manabi,16729
+2022-08,morona santiago,3384
+2022-08,napo,1717
+2022-08,orellana,2868
+2022-08,pastaza,2567
+2022-08,pichincha,70662
+2022-08,santa elena,4512
+2022-08,santo domingo de los tsachilas,10066
+2022-08,sucumbios,3837
+2022-08,tungurahua,11659
+2022-08,zamora chinchipe,1237
+2022-09,azuay,17263
+2022-09,bolivar,2397
+2022-09,canar,3350
+2022-09,carchi,3549
+2022-09,chimborazo,8677
+2022-09,cotopaxi,6470
+2022-09,el oro,13671
+2022-09,esmeraldas,7784
+2022-09,galapagos,1046
+2022-09,guayas,66271
+2022-09,imbabura,10579
+2022-09,loja,7866
+2022-09,los rios,13653
+2022-09,manabi,15248
+2022-09,morona santiago,3229
+2022-09,napo,1620
+2022-09,orellana,3389
+2022-09,pastaza,2515
+2022-09,pichincha,74213
+2022-09,santa elena,4232
+2022-09,santo domingo de los tsachilas,9873
+2022-09,sucumbios,3998
+2022-09,tungurahua,11750
+2022-09,zamora chinchipe,1392
+2022-10,azuay,18601
+2022-10,bolivar,2503
+2022-10,canar,3457
+2022-10,carchi,3797
+2022-10,chimborazo,9440
+2022-10,cotopaxi,6382
+2022-10,el oro,14111
+2022-10,esmeraldas,7209
+2022-10,galapagos,1019
+2022-10,guayas,67577
+2022-10,imbabura,10825
+2022-10,loja,8819
+2022-10,los rios,14458
+2022-10,manabi,16160
+2022-10,morona santiago,3538
+2022-10,napo,1889
+2022-10,orellana,3546
+2022-10,pastaza,2633
+2022-10,pichincha,77432
+2022-10,santa elena,4399
+2022-10,santo domingo de los tsachilas,10218
+2022-10,sucumbios,4040
+2022-10,tungurahua,12987
+2022-10,zamora chinchipe,1607
+2022-11,azuay,16953
+2022-11,bolivar,2300
+2022-11,canar,3082
+2022-11,carchi,3521
+2022-11,chimborazo,8779
+2022-11,cotopaxi,6199
+2022-11,el oro,13111
+2022-11,esmeraldas,6926
+2022-11,galapagos,891
+2022-11,guayas,64375
+2022-11,imbabura,10180
+2022-11,loja,7982
+2022-11,los rios,13193
+2022-11,manabi,15240
+2022-11,morona santiago,3272
+2022-11,napo,1735
+2022-11,orellana,3528
+2022-11,pastaza,2527
+2022-11,pichincha,71838
+2022-11,santa elena,4276
+2022-11,santo domingo de los tsachilas,9950
+2022-11,sucumbios,3837
+2022-11,tungurahua,12145
+2022-11,zamora chinchipe,1355
+2022-12,azuay,18271
+2022-12,bolivar,2265
+2022-12,canar,3287
+2022-12,carchi,3604
+2022-12,chimborazo,9264
+2022-12,cotopaxi,6519
+2022-12,el oro,14227
+2022-12,esmeraldas,6960
+2022-12,galapagos,1059
+2022-12,guayas,65970
+2022-12,imbabura,11014
+2022-12,loja,8671
+2022-12,los rios,13581
+2022-12,manabi,16025
+2022-12,morona santiago,3662
+2022-12,napo,1755
+2022-12,orellana,3312
+2022-12,pastaza,2454
+2022-12,pichincha,77339
+2022-12,santa elena,4262
+2022-12,santo domingo de los tsachilas,10631
+2022-12,sucumbios,4057
+2022-12,tungurahua,12603
+2022-12,zamora chinchipe,1485
+2023-01,azuay,15997
+2023-01,bolivar,2226
+2023-01,canar,3145
+2023-01,carchi,3518
+2023-01,chimborazo,8550
+2023-01,cotopaxi,6059
+2023-01,el oro,13759
+2023-01,esmeraldas,6752
+2023-01,galapagos,984
+2023-01,guayas,63633
+2023-01,imbabura,10415
+2023-01,loja,8146
+2023-01,los rios,13089
+2023-01,manabi,15869
+2023-01,morona santiago,3350
+2023-01,napo,1692
+2023-01,orellana,3295
+2023-01,pastaza,2375
+2023-01,pichincha,71265
+2023-01,santa elena,4669
+2023-01,santo domingo de los tsachilas,10312
+2023-01,sucumbios,4033
+2023-01,tungurahua,11924
+2023-01,zamora chinchipe,1292
+2023-02,azuay,15231
+2023-02,bolivar,2615
+2023-02,canar,2910
+2023-02,carchi,3412
+2023-02,chimborazo,8456
+2023-02,cotopaxi,5714
+2023-02,el oro,12681
+2023-02,esmeraldas,6354
+2023-02,galapagos,832
+2023-02,guayas,57757
+2023-02,imbabura,9817
+2023-02,loja,7922
+2023-02,los rios,12142
+2023-02,manabi,15256
+2023-02,morona santiago,3541
+2023-02,napo,1598
+2023-02,orellana,3001
+2023-02,pastaza,2145
+2023-02,pichincha,67831
+2023-02,santa elena,4448
+2023-02,santo domingo de los tsachilas,9514
+2023-02,sucumbios,3709
+2023-02,tungurahua,12219
+2023-02,zamora chinchipe,1418
+2023-03,azuay,16666
+2023-03,bolivar,2028
+2023-03,canar,2895
+2023-03,carchi,3625
+2023-03,chimborazo,8506
+2023-03,cotopaxi,6304
+2023-03,el oro,14326
+2023-03,esmeraldas,6128
+2023-03,galapagos,957
+2023-03,guayas,61843
+2023-03,imbabura,10568
+2023-03,loja,8512
+2023-03,los rios,12985
+2023-03,manabi,15715
+2023-03,morona santiago,3566
+2023-03,napo,1592
+2023-03,orellana,3505
+2023-03,pastaza,2438
+2023-03,pichincha,74548
+2023-03,santa elena,4433
+2023-03,santo domingo de los tsachilas,10300
+2023-03,sucumbios,4080
+2023-03,tungurahua,12432
+2023-03,zamora chinchipe,1451
+2023-04,azuay,17033
+2023-04,bolivar,2112
+2023-04,canar,2984
+2023-04,carchi,3537
+2023-04,chimborazo,8956
+2023-04,cotopaxi,6252
+2023-04,el oro,13391
+2023-04,esmeraldas,5589
+2023-04,galapagos,882
+2023-04,guayas,59163
+2023-04,imbabura,10317
+2023-04,loja,8476
+2023-04,los rios,12857
+2023-04,manabi,15251
+2023-04,morona santiago,3644
+2023-04,napo,1673
+2023-04,orellana,3346
+2023-04,pastaza,2479
+2023-04,pichincha,77913
+2023-04,santa elena,4696
+2023-04,santo domingo de los tsachilas,10705
+2023-04,sucumbios,4115
+2023-04,tungurahua,12542
+2023-04,zamora chinchipe,1411
+2023-05,azuay,16354
+2023-05,bolivar,2355
+2023-05,canar,2860
+2023-05,carchi,3632
+2023-05,chimborazo,9218
+2023-05,cotopaxi,6239
+2023-05,el oro,13297
+2023-05,esmeraldas,5767
+2023-05,galapagos,892
+2023-05,guayas,63012
+2023-05,imbabura,10358
+2023-05,loja,8337
+2023-05,los rios,13462
+2023-05,manabi,15033
+2023-05,morona santiago,3707
+2023-05,napo,1578
+2023-05,orellana,3455
+2023-05,pastaza,2359
+2023-05,pichincha,76057
+2023-05,santa elena,4426
+2023-05,santo domingo de los tsachilas,10848
+2023-05,sucumbios,4292
+2023-05,tungurahua,12483
+2023-05,zamora chinchipe,1253
+2023-06,azuay,16343
+2023-06,bolivar,2304
+2023-06,canar,2797
+2023-06,carchi,3537
+2023-06,chimborazo,8865
+2023-06,cotopaxi,5839
+2023-06,el oro,13225
+2023-06,esmeraldas,5853
+2023-06,galapagos,1016
+2023-06,guayas,65925
+2023-06,imbabura,10443
+2023-06,loja,7829
+2023-06,los rios,13396
+2023-06,manabi,15284
+2023-06,morona santiago,3443
+2023-06,napo,1457
+2023-06,orellana,2919
+2023-06,pastaza,2183
+2023-06,pichincha,74728
+2023-06,santa elena,4531
+2023-06,santo domingo de los tsachilas,10561
+2023-06,sucumbios,4401
+2023-06,tungurahua,12039
+2023-06,zamora chinchipe,1240
+2023-07,azuay,15946
+2023-07,bolivar,2914
+2023-07,canar,2963
+2023-07,carchi,3627
+2023-07,chimborazo,8785
+2023-07,cotopaxi,6026
+2023-07,el oro,13558
+2023-07,esmeraldas,5718
+2023-07,galapagos,1008
+2023-07,guayas,68143
+2023-07,imbabura,10480
+2023-07,loja,8155
+2023-07,los rios,13487
+2023-07,manabi,15976
+2023-07,morona santiago,3519
+2023-07,napo,1548
+2023-07,orellana,2819
+2023-07,pastaza,2103
+2023-07,pichincha,74670
+2023-07,santa elena,4351
+2023-07,santo domingo de los tsachilas,11403
+2023-07,sucumbios,4408
+2023-07,tungurahua,12498
+2023-07,zamora chinchipe,1196
+2023-08,azuay,14668
+2023-08,bolivar,2960
+2023-08,canar,2879
+2023-08,carchi,3433
+2023-08,chimborazo,8366
+2023-08,cotopaxi,5787
+2023-08,el oro,12908
+2023-08,esmeraldas,5370
+2023-08,galapagos,880
+2023-08,guayas,65398
+2023-08,imbabura,9598
+2023-08,loja,8050
+2023-08,los rios,13551
+2023-08,manabi,16005
+2023-08,morona santiago,3403
+2023-08,napo,1729
+2023-08,orellana,2533
+2023-08,pastaza,2195
+2023-08,pichincha,71405
+2023-08,santa elena,4388
+2023-08,santo domingo de los tsachilas,11075
+2023-08,sucumbios,4534
+2023-08,tungurahua,11969
+2023-08,zamora chinchipe,1198
+2023-09,azuay,16096
+2023-09,bolivar,2941
+2023-09,canar,3061
+2023-09,carchi,3799
+2023-09,chimborazo,8371
+2023-09,cotopaxi,6117
+2023-09,el oro,12588
+2023-09,esmeraldas,5218
+2023-09,galapagos,923
+2023-09,guayas,63106
+2023-09,imbabura,10496
+2023-09,loja,8273
+2023-09,los rios,12706
+2023-09,manabi,14831
+2023-09,morona santiago,3552
+2023-09,napo,1461
+2023-09,orellana,3437
+2023-09,pastaza,2237
+2023-09,pichincha,74651
+2023-09,santa elena,4314
+2023-09,santo domingo de los tsachilas,10766
+2023-09,sucumbios,4427
+2023-09,tungurahua,12394
+2023-09,zamora chinchipe,1297
+2023-10,azuay,16471
+2023-10,bolivar,3219
+2023-10,canar,3137
+2023-10,carchi,4010
+2023-10,chimborazo,8767
+2023-10,cotopaxi,6340
+2023-10,el oro,12296
+2023-10,esmeraldas,5376
+2023-10,galapagos,922
+2023-10,guayas,64021
+2023-10,imbabura,10378
+2023-10,loja,8369
+2023-10,los rios,12818
+2023-10,manabi,15081
+2023-10,morona santiago,3595
+2023-10,napo,1665
+2023-10,orellana,3305
+2023-10,pastaza,2380
+2023-10,pichincha,72525
+2023-10,santa elena,4500
+2023-10,santo domingo de los tsachilas,10834
+2023-10,sucumbios,4385
+2023-10,tungurahua,13127
+2023-10,zamora chinchipe,1434
+2023-11,azuay,16362
+2023-11,bolivar,3028
+2023-11,canar,2928
+2023-11,carchi,3660
+2023-11,chimborazo,8249
+2023-11,cotopaxi,5893
+2023-11,el oro,11013
+2023-11,esmeraldas,5045
+2023-11,galapagos,853
+2023-11,guayas,61648
+2023-11,imbabura,9714
+2023-11,loja,7604
+2023-11,los rios,11987
+2023-11,manabi,13893
+2023-11,morona santiago,3284
+2023-11,napo,1584
+2023-11,orellana,2878
+2023-11,pastaza,2134
+2023-11,pichincha,70716
+2023-11,santa elena,4042
+2023-11,santo domingo de los tsachilas,9590
+2023-11,sucumbios,4233
+2023-11,tungurahua,12211
+2023-11,zamora chinchipe,1304
+2023-12,azuay,17035
+2023-12,bolivar,3270
+2023-12,canar,3081
+2023-12,carchi,3779
+2023-12,chimborazo,8543
+2023-12,cotopaxi,6379
+2023-12,el oro,12387
+2023-12,esmeraldas,5251
+2023-12,galapagos,875
+2023-12,guayas,70604
+2023-12,imbabura,10721
+2023-12,loja,8352
+2023-12,los rios,12882
+2023-12,manabi,14710
+2023-12,morona santiago,3428
+2023-12,napo,1737
+2023-12,orellana,2692
+2023-12,pastaza,2328
+2023-12,pichincha,78484
+2023-12,santa elena,4118
+2023-12,santo domingo de los tsachilas,9681
+2023-12,sucumbios,4815
+2023-12,tungurahua,12852
+2023-12,zamora chinchipe,1543
+2024-01,azuay,7676
+2024-01,bolivar,2766
+2024-01,canar,1945
+2024-01,carchi,2377
+2024-01,chimborazo,5501
+2024-01,cotopaxi,4357
+2024-01,el oro,9727
+2024-01,esmeraldas,4110
+2024-01,galapagos,682
+2024-01,guayas,55123
+2024-01,imbabura,6255
+2024-01,loja,4861
+2024-01,los rios,10434
+2024-01,manabi,11192
+2024-01,morona santiago,2102
+2024-01,napo,1166
+2024-01,orellana,1817
+2024-01,pastaza,1521
+2024-01,pichincha,50224
+2024-01,santa elena,3286
+2024-01,santo domingo de los tsachilas,7325
+2024-01,sucumbios,3708
+2024-01,tungurahua,9073
+2024-01,zamora chinchipe,913
+2024-02,azuay,14382
+2024-02,bolivar,3205
+2024-02,canar,2729
+2024-02,carchi,3504
+2024-02,chimborazo,7571
+2024-02,cotopaxi,5875
+2024-02,el oro,11684
+2024-02,esmeraldas,5748
+2024-02,galapagos,973
+2024-02,guayas,67994
+2024-02,imbabura,9548
+2024-02,loja,7544
+2024-02,los rios,12318
+2024-02,manabi,13651
+2024-02,morona santiago,3574
+2024-02,napo,1647
+2024-02,orellana,2927
+2024-02,pastaza,2077
+2024-02,pichincha,68471
+2024-02,santa elena,4311
+2024-02,santo domingo de los tsachilas,9488
+2024-02,sucumbios,4500
+2024-02,tungurahua,11683
+2024-02,zamora chinchipe,1347
+2024-03,azuay,14968
+2024-03,bolivar,3173
+2024-03,canar,2808
+2024-03,carchi,3704
+2024-03,chimborazo,7787
+2024-03,cotopaxi,6381
+2024-03,el oro,12235
+2024-03,esmeraldas,5742
+2024-03,galapagos,861
+2024-03,guayas,70834
+2024-03,imbabura,10155
+2024-03,loja,7438
+2024-03,los rios,12831
+2024-03,manabi,14050
+2024-03,morona santiago,3776
+2024-03,napo,1645
+2024-03,orellana,2925
+2024-03,pastaza,2317
+2024-03,pichincha,74340
+2024-03,santa elena,4389
+2024-03,santo domingo de los tsachilas,9840
+2024-03,sucumbios,4785
+2024-03,tungurahua,12695
+2024-03,zamora chinchipe,1412
+2024-04,azuay,14068
+2024-04,bolivar,3294
+2024-04,canar,2675
+2024-04,carchi,3440
+2024-04,chimborazo,7599
+2024-04,cotopaxi,5872
+2024-04,el oro,11738
+2024-04,esmeraldas,5318
+2024-04,galapagos,841
+2024-04,guayas,66094
+2024-04,imbabura,9164
+2024-04,loja,7422
+2024-04,los rios,11668
+2024-04,manabi,13036
+2024-04,morona santiago,3130
+2024-04,napo,1698
+2024-04,orellana,2847
+2024-04,pastaza,2186
+2024-04,pichincha,69141
+2024-04,santa elena,3690
+2024-04,santo domingo de los tsachilas,9073
+2024-04,sucumbios,4656
+2024-04,tungurahua,11877
+2024-04,zamora chinchipe,1369
+2024-05,azuay,14909
+2024-05,bolivar,2630
+2024-05,canar,2777
+2024-05,carchi,3600
+2024-05,chimborazo,7864
+2024-05,cotopaxi,6067
+2024-05,el oro,11672
+2024-05,esmeraldas,5351
+2024-05,galapagos,849
+2024-05,guayas,66551
+2024-05,imbabura,9846
+2024-05,loja,7270
+2024-05,los rios,12307
+2024-05,manabi,13103
+2024-05,morona santiago,3457
+2024-05,napo,1563
+2024-05,orellana,2998
+2024-05,pastaza,2186
+2024-05,pichincha,72272
+2024-05,santa elena,3736
+2024-05,santo domingo de los tsachilas,9300
+2024-05,sucumbios,4387
+2024-05,tungurahua,12076
+2024-05,zamora chinchipe,1260
+2024-06,azuay,14514
+2024-06,bolivar,2602
+2024-06,canar,2659
+2024-06,carchi,3442
+2024-06,chimborazo,7630
+2024-06,cotopaxi,6125
+2024-06,el oro,11751
+2024-06,esmeraldas,5173
+2024-06,galapagos,776
+2024-06,guayas,67428
+2024-06,imbabura,9839
+2024-06,loja,7348
+2024-06,los rios,11961
+2024-06,manabi,13196
+2024-06,morona santiago,3182
+2024-06,napo,1526
+2024-06,orellana,2953
+2024-06,pastaza,2067
+2024-06,pichincha,72602
+2024-06,santa elena,3904
+2024-06,santo domingo de los tsachilas,9399
+2024-06,sucumbios,4058
+2024-06,tungurahua,11570
+2024-06,zamora chinchipe,1289
+2024-07,azuay,13416
+2024-07,bolivar,2714
+2024-07,canar,2537
+2024-07,carchi,3371
+2024-07,chimborazo,7182
+2024-07,cotopaxi,5815
+2024-07,el oro,11539
+2024-07,esmeraldas,4822
+2024-07,galapagos,751
+2024-07,guayas,65573
+2024-07,imbabura,9512
+2024-07,loja,7184
+2024-07,los rios,11941
+2024-07,manabi,13832
+2024-07,morona santiago,3045
+2024-07,napo,1539
+2024-07,orellana,2590
+2024-07,pastaza,1988
+2024-07,pichincha,69195
+2024-07,santa elena,3741
+2024-07,santo domingo de los tsachilas,9762
+2024-07,sucumbios,4075
+2024-07,tungurahua,10830
+2024-07,zamora chinchipe,1245
+2024-08,azuay,13730
+2024-08,bolivar,2929
+2024-08,canar,2641
+2024-08,carchi,3322
+2024-08,chimborazo,7066
+2024-08,cotopaxi,6067
+2024-08,el oro,11630
+2024-08,esmeraldas,5505
+2024-08,galapagos,870
+2024-08,guayas,64661
+2024-08,imbabura,9739
+2024-08,loja,8032
+2024-08,los rios,12344
+2024-08,manabi,13820
+2024-08,morona santiago,3107
+2024-08,napo,1639
+2024-08,orellana,2549
+2024-08,pastaza,2098
+2024-08,pichincha,68176
+2024-08,santa elena,3730
+2024-08,santo domingo de los tsachilas,9488
+2024-08,sucumbios,3994
+2024-08,tungurahua,11022
+2024-08,zamora chinchipe,1328
+2024-09,azuay,14545
+2024-09,bolivar,3257
+2024-09,canar,2721
+2024-09,carchi,3520
+2024-09,chimborazo,7436
+2024-09,cotopaxi,6595
+2024-09,el oro,11419
+2024-09,esmeraldas,5279
+2024-09,galapagos,773
+2024-09,guayas,66780
+2024-09,imbabura,10509
+2024-09,loja,7723
+2024-09,los rios,12658
+2024-09,manabi,13489
+2024-09,morona santiago,2770
+2024-09,napo,1636
+2024-09,orellana,3102
+2024-09,pastaza,2192
+2024-09,pichincha,72738
+2024-09,santa elena,3743
+2024-09,santo domingo de los tsachilas,10049
+2024-09,sucumbios,4184
+2024-09,tungurahua,11333
+2024-09,zamora chinchipe,1414
+2024-10,azuay,15745
+2024-10,bolivar,3523
+2024-10,canar,2758
+2024-10,carchi,3491
+2024-10,chimborazo,8240
+2024-10,cotopaxi,6485
+2024-10,el oro,11441
+2024-10,esmeraldas,5078
+2024-10,galapagos,776
+2024-10,guayas,79502
+2024-10,imbabura,9846
+2024-10,loja,8253
+2024-10,los rios,12840
+2024-10,manabi,13964
+2024-10,morona santiago,3724
+2024-10,napo,1807
+2024-10,orellana,2895
+2024-10,pastaza,2205
+2024-10,pichincha,70553
+2024-10,santa elena,3848
+2024-10,santo domingo de los tsachilas,9801
+2024-10,sucumbios,3980
+2024-10,tungurahua,12247
+2024-10,zamora chinchipe,1416
+2024-11,azuay,15391
+2024-11,bolivar,3302
+2024-11,canar,2773
+2024-11,carchi,3443
+2024-11,chimborazo,7813
+2024-11,cotopaxi,6450
+2024-11,el oro,10230
+2024-11,esmeraldas,5282
+2024-11,galapagos,765
+2024-11,guayas,74448
+2024-11,imbabura,9229
+2024-11,loja,8054
+2024-11,los rios,12410
+2024-11,manabi,13705
+2024-11,morona santiago,3797
+2024-11,napo,1680
+2024-11,orellana,2572
+2024-11,pastaza,2187
+2024-11,pichincha,66510
+2024-11,santa elena,3392
+2024-11,santo domingo de los tsachilas,9155
+2024-11,sucumbios,3761
+2024-11,tungurahua,11736
+2024-11,zamora chinchipe,1430
+2024-12,azuay,15856
+2024-12,bolivar,3230
+2024-12,canar,2756
+2024-12,carchi,3527
+2024-12,chimborazo,8079
+2024-12,cotopaxi,6357
+2024-12,el oro,11441
+2024-12,esmeraldas,5618
+2024-12,galapagos,809
+2024-12,guayas,81799
+2024-12,imbabura,9939
+2024-12,loja,8174
+2024-12,los rios,12269
+2024-12,manabi,14270
+2024-12,morona santiago,4121
+2024-12,napo,1747
+2024-12,orellana,2597
+2024-12,pastaza,2170
+2024-12,pichincha,71167
+2024-12,santa elena,4027
+2024-12,santo domingo de los tsachilas,9781
+2024-12,sucumbios,4033
+2024-12,tungurahua,12034
+2024-12,zamora chinchipe,1433
+2025-01,azuay,13929
+2025-01,bolivar,3128
+2025-01,canar,2370
+2025-01,carchi,3419
+2025-01,chimborazo,7632
+2025-01,cotopaxi,6265
+2025-01,el oro,10273
+2025-01,esmeraldas,5278
+2025-01,galapagos,793
+2025-01,guayas,69509
+2025-01,imbabura,9266
+2025-01,loja,7168
+2025-01,los rios,11796
+2025-01,manabi,12358
+2025-01,morona santiago,3786
+2025-01,napo,1574
+2025-01,orellana,2560
+2025-01,pastaza,1955
+2025-01,pichincha,64835
+2025-01,santa elena,4134
+2025-01,santo domingo de los tsachilas,8709
+2025-01,sucumbios,4130
+2025-01,tungurahua,11312
+2025-01,zamora chinchipe,1317
+2025-02,azuay,13528
+2025-02,bolivar,3043
+2025-02,canar,2418
+2025-02,carchi,3156
+2025-02,chimborazo,7304
+2025-02,cotopaxi,6181
+2025-02,el oro,9862
+2025-02,esmeraldas,4660
+2025-02,galapagos,719
+2025-02,guayas,58924
+2025-02,imbabura,8640
+2025-02,loja,6872
+2025-02,los rios,10121
+2025-02,manabi,11334
+2025-02,morona santiago,3584
+2025-02,napo,1624
+2025-02,orellana,2283
+2025-02,pastaza,1857
+2025-02,pichincha,61474
+2025-02,santa elena,3490
+2025-02,santo domingo de los tsachilas,8327
+2025-02,sucumbios,3505
+2025-02,tungurahua,10295
+2025-02,zamora chinchipe,1314
+2025-03,azuay,15199
+2025-03,bolivar,3228
+2025-03,canar,2702
+2025-03,carchi,3433
+2025-03,chimborazo,8249
+2025-03,cotopaxi,6703
+2025-03,el oro,11656
+2025-03,esmeraldas,5405
+2025-03,galapagos,823
+2025-03,guayas,65270
+2025-03,imbabura,10154
+2025-03,loja,8579
+2025-03,los rios,11538
+2025-03,manabi,13516
+2025-03,morona santiago,4089
+2025-03,napo,1872
+2025-03,orellana,2597
+2025-03,pastaza,2144
+2025-03,pichincha,68908
+2025-03,santa elena,4116
+2025-03,santo domingo de los tsachilas,9107
+2025-03,sucumbios,4012
+2025-03,tungurahua,12183
+2025-03,zamora chinchipe,1560
+2025-04,azuay,14687
+2025-04,bolivar,2849
+2025-04,canar,2313
+2025-04,carchi,3406
+2025-04,chimborazo,7843
+2025-04,cotopaxi,6544
+2025-04,el oro,10750
+2025-04,esmeraldas,5512
+2025-04,galapagos,727
+2025-04,guayas,61401
+2025-04,imbabura,9664
+2025-04,loja,8024
+2025-04,los rios,10416
+2025-04,manabi,12246
+2025-04,morona santiago,3924
+2025-04,napo,1721
+2025-04,orellana,2489
+2025-04,pastaza,1969
+2025-04,pichincha,67678
+2025-04,santa elena,3717
+2025-04,santo domingo de los tsachilas,9152
+2025-04,sucumbios,3806
+2025-04,tungurahua,10984
+2025-04,zamora chinchipe,1515
+2025-05,azuay,15222
+2025-05,bolivar,3008
+2025-05,canar,2574
+2025-05,carchi,3509
+2025-05,chimborazo,7456
+2025-05,cotopaxi,7065
+2025-05,el oro,11356
+2025-05,esmeraldas,5241
+2025-05,galapagos,853
+2025-05,guayas,67067
+2025-05,imbabura,10341
+2025-05,loja,7668
+2025-05,los rios,11388
+2025-05,manabi,12696
+2025-05,morona santiago,4035
+2025-05,napo,1719
+2025-05,orellana,2632
+2025-05,pastaza,2053
+2025-05,pichincha,71816
+2025-05,santa elena,3941
+2025-05,santo domingo de los tsachilas,9715
+2025-05,sucumbios,3944
+2025-05,tungurahua,11140
+2025-05,zamora chinchipe,1405
+2025-06,azuay,15081
+2025-06,bolivar,3041
+2025-06,canar,2754
+2025-06,carchi,3406
+2025-06,chimborazo,7661
+2025-06,cotopaxi,6736
+2025-06,el oro,11292
+2025-06,esmeraldas,5200
+2025-06,galapagos,866
+2025-06,guayas,67270
+2025-06,imbabura,9880
+2025-06,loja,7527
+2025-06,los rios,10856
+2025-06,manabi,12130
+2025-06,morona santiago,3940
+2025-06,napo,1693
+2025-06,orellana,2761
+2025-06,pastaza,1896
+2025-06,pichincha,67487
+2025-06,santa elena,3697
+2025-06,santo domingo de los tsachilas,9355
+2025-06,sucumbios,4074
+2025-06,tungurahua,11000
+2025-06,zamora chinchipe,1462
+2025-07,azuay,14609
+2025-07,bolivar,3140
+2025-07,canar,2413
+2025-07,carchi,3036
+2025-07,chimborazo,7351
+2025-07,cotopaxi,6251
+2025-07,el oro,11041
+2025-07,esmeraldas,5136
+2025-07,galapagos,856
+2025-07,guayas,68585
+2025-07,imbabura,9405
+2025-07,loja,7832
+2025-07,los rios,11225
+2025-07,manabi,12397
+2025-07,morona santiago,3875
+2025-07,napo,1398
+2025-07,orellana,2623
+2025-07,pastaza,1903
+2025-07,pichincha,65076
+2025-07,santa elena,3703
+2025-07,santo domingo de los tsachilas,9585
+2025-07,sucumbios,3975
+2025-07,tungurahua,11124
+2025-07,zamora chinchipe,1451
+2025-08,azuay,14441
+2025-08,bolivar,3122
+2025-08,canar,2630
+2025-08,carchi,3206
+2025-08,chimborazo,7153
+2025-08,cotopaxi,6516
+2025-08,el oro,11450
+2025-08,esmeraldas,6676
+2025-08,galapagos,907
+2025-08,guayas,71606
+2025-08,imbabura,9853
+2025-08,loja,7562
+2025-08,los rios,11562
+2025-08,manabi,12897
+2025-08,morona santiago,4119
+2025-08,napo,1483
+2025-08,orellana,2355
+2025-08,pastaza,1917
+2025-08,pichincha,65006
+2025-08,santa elena,3927
+2025-08,santo domingo de los tsachilas,10029
+2025-08,sucumbios,4350
+2025-08,tungurahua,11115
+2025-08,zamora chinchipe,1440

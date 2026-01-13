@@ -1,0 +1,27 @@
+{
+  "total_registros": 16316114,
+  "anos": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "provincias": 24,
+  "servicios": 7,
+  "columnas": [
+    "Fecha",
+    "provincia",
+    "Canton",
+    "Cod_Parroquia",
+    "Parroquia",
+    "Servicio",
+    "Subtipo",
+    "DPA_PARROQ",
+    "Año",
+    "Mes",
+    "Hora",
+    "DiaSemana",
+    "Año_Mes"
+  ]
+}

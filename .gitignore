@@ -1,9 +1,13 @@
 # Archivos de datos grandes (exceder límite de GitHub 100MB)
-*.csv
 *.rar
 *.xlsx
 
-# Carpetas con datos
+# CSVs grandes
+datos_limpios_2021_2025.csv
+emergencias*.csv
+todos_georreferenciados*.csv
+
+# Carpetas con datos grandes
 datos limpios/
 
 # Python cache
@@ -12,3 +16,5 @@ __pycache__/
 
 # Notebooks checkpoints
 .ipynb_checkpoints/
+
+# Nota: datos_agregados/*.csv SÍ se suben (son pequeños ~71 KB)
