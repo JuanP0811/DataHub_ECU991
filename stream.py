@@ -31,10 +31,13 @@ archivo = descargar_datos_gdrive()
 # ==========================================
 # CARGA DE DATOS
 # ==========================================
+# Límite de filas para Streamlit Cloud (memoria limitada)
+MAX_FILAS = 500000
+
 @st.cache_data
 def cargar_datos_completos():
-    """Carga todos los datos para análisis"""
-    df = pd.read_csv(ARCHIVO_CSV, low_memory=False)
+    """Carga datos para análisis (limitado para funcionar en la nube)"""
+    df = pd.read_csv(ARCHIVO_CSV, nrows=MAX_FILAS, low_memory=False)
     df['Fecha'] = pd.to_datetime(df['Fecha'], errors='coerce')
     df['Año'] = df['Fecha'].dt.year
     df['Mes'] = df['Fecha'].dt.month
@@ -44,16 +47,21 @@ def cargar_datos_completos():
 
 @st.cache_data
 def obtener_info_basica():
-    """Obtiene info básica sin cargar todo en memoria"""
-    total_filas = sum(1 for _ in open(ARCHIVO_CSV, encoding='utf-8')) - 1
+    """Obtiene info básica"""
+    # Contar filas totales del archivo
+    total_filas_archivo = sum(1 for _ in open(ARCHIVO_CSV, encoding='utf-8')) - 1
     columnas = pd.read_csv(ARCHIVO_CSV, nrows=0).columns.tolist()
-    return total_filas, columnas
+    return min(total_filas_archivo, MAX_FILAS), columnas, total_filas_archivo
 
 # Cargar datos
-total_filas, columnas = obtener_info_basica()
+total_filas, columnas, total_archivo = obtener_info_basica()
 
 with st.spinner("Cargando datos para visualización..."):
     df = cargar_datos_completos()
+
+# Aviso de muestra
+if total_archivo > MAX_FILAS:
+    st.info(f"📊 Mostrando muestra de **{MAX_FILAS:,}** registros de **{total_archivo:,}** totales (para optimizar rendimiento en la nube)")
 
 # Métricas principales
 st.markdown("### 📈 Resumen General")
