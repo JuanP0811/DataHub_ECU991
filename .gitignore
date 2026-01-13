@@ -1,0 +1,14 @@
+# Archivos de datos grandes (exceder límite de GitHub 100MB)
+*.csv
+*.rar
+*.xlsx
+
+# Carpetas con datos
+datos limpios/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
